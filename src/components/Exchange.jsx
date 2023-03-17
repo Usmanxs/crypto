@@ -1,35 +1,43 @@
 import React, { useEffect,useState } from 'react';
 import axios  from "axios";
+import Loader from './loader';
+
 const Exchange = () => {
     
  const [exchanges,setexchanges] = useState([])
+ const [Loader,setLoader] = useState(true)
  const server = "https://api.coingecko.com/api/v3";
      useEffect(()=>{
  const fatchExchange= async ()=>{
     const {data} =await axios.get(`${server}/exchanges`)
     setexchanges(data) 
+ 
 }
   fatchExchange();
      },[])
-  return (
-    <div>
-      <h1>Exhange</h1>
-       <div className='list-coin'>
-        {exchanges.map((i)=>{
-            <div> 
 
-            <ExchangeCard
-            
-            key={i.id}
-            name={i.name}
-            img={i.image}
-            rank={i.rank} 
-            url={i.url}/>
-            console.log(i.url)   
-            </div>
-        })}
+
+     return (
+         <div  className="container">
      
+             <h1>Exhange</h1>
+             
+    
+        {exchanges.map((i)=>(
+            <div className="Coincard" key={i.id}>
+              <a href={i.url}>
+                <img src={i.image} alt="image"  width="50px" height="50px"/>
+                <p>{i.name}</p>
+                <p>{i.rank}</p>
+              </a>
+            </div>
+     
+              
+        ))}
         
+    
+       <div>
+     
        </div>
 
     
@@ -37,10 +45,4 @@ const Exchange = () => {
   )
 }
 
-const ExchangeCard = ({id,name,img,rank,url})=>{
-    <a href="url" target="_blank">
-        <img src="img" alt="exchange" width="10px" height="10px"/>
-     <p>{rank}</p>
-    </a>
-}
 export default Exchange

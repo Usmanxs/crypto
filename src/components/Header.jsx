@@ -5,13 +5,13 @@ const Header = () => {
   return (
     <div className='Header'>
    <button>
-    <Link to="./"><h4> Home</h4></Link>
+    <Link to="./" style={{ textDecoration: 'none', color:'black' }}> Home</Link>
     </button> 
    <button>
-    <Link to="./Coin"><h4>Coin</h4></Link>
+    <Link to="./Coin" style={{ textDecoration: 'none', color:'black' }}>Coin</Link>
     </button> 
    <button>
-    <Link to="./Exchange"><h4>Exchange</h4></Link>
+    <Link to="./Exchange" style={{ textDecoration: 'none', color:'black' }}>Exchange</Link>
     </button> 
     </div>
   )

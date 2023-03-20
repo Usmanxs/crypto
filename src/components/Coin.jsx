@@ -11,7 +11,7 @@ const Coin = () => {
  const fatchExchange= async ()=>{
     const {data} =await axios.get(`${server}/coins/markets?vs_currency=pkr`)
     setexchanges(data) 
-    console.log(data)
+
     setloading(false    )
  
 }
@@ -40,7 +40,7 @@ const Coin = () => {
                 </div>
             
             <div className="card-price">
-                <h4>{" price:"+"pkr"+i.current_price}</h4>
+                <h4>{" price:"+i.current_price +''+"Rs"}</h4>
                 </div>
             
            

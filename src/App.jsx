@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {BrowserRouter as Router,Routes, Route} from "react-router-dom"
-import './App.css'
+import './styles/app.css'
 import Home from './components/Home';
 import Header from './components/Header';
 import Coin from './components/Coin';

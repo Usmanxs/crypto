@@ -1,18 +1,23 @@
 import React from 'react'
-
+import '../styles/home.css'
 const Home = () => {
   return (
     <div className="home">
       
-  <div>
+     <div>
 
       <h1>Home</h1>
-       <h5>This is an crpto trading website.
-        
-       </h5>
-      </div>
+      
+       
+       <div className="design">
       <img src="/Assets/logo.png" alt="logo" />
-    </div>
+        <h1> DESIGN BY: 
+          </h1>
+          <img src="/Assets/uxs.png" alt="logo"   height="50px"/>
+       </div>
+       </div>
+      </div>
+
   )
 }
 

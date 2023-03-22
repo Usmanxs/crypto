@@ -1,0 +1,21 @@
+.app:has(.home){
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+   
+}
+.home{
+    color: #616161;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.design{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: flex-end;
+    align-items: center;
+
+}

@@ -1,119 +1,95 @@
-.Header{
+.Header {
     display: flex;
-    
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
     top: 0;
     width: 100%;
     background-color: rgb(0, 0, 0);
-  
 }
-.Header>button{
+
+.Header button {
     position: relative;
     top: 10px;
     border-radius: 50px;
     background-color: #616161;
     text-transform: uppercase;
-    margin: 0px 25px 15px;
+    margin: 0 25px 15px;
     min-width: 120px;
     min-height: 50px;
-    border:none;
+    border: none;
     font-size: large;
     transition-duration: 0.5s;
-    
 }
-.Header>button:hover{
+
+.Header button:hover {
     transform: translateY(3px);
 }
 
-
-.main>h1{
-   
-    display: flex ;
-   
+.main h1 {
+    display: flex;
     color: #616161;
-    
     align-items: center;
     justify-content: center;
-
-    
-    
 }
 
-.container{
-    display:grid;
+.container {
+    display: grid;
     width: 52vw;
-
     margin: 0 auto;
     padding: 0.5em;
 }
 
-.card{
-    
+.card {
     display: flex;
-     flex-wrap: wrap;
-    justify-items: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 10px;
-    
-    
 }
 
-.Coincard{
-  display: flex;
-   margin: 15px auto;
-   flex-wrap: wrap;
-   padding: 5px;
-   align-items: center;
-   justify-content: center;
-   width: 10em;
-   height: 10em;
-  align-content: flex-start;
-   background-color:#fffafa;
-   box-shadow: -4px 22px 13px -10px rgba(201,199,201,1);
-   border-radius: 20px;
-   text-decoration-color: black;
-   flex-flow: column;
-   transition-duration: 0.5s;
-
-   
-   
+.Coincard {
+    display: flex;
+    margin: 15px auto;
+    flex-wrap: wrap;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+    height: 10em;
+    align-content: flex-start;
+    background-color: #fffafa;
+    box-shadow: -4px 22px 13px -10px rgba(201,199,201,1);
+    border-radius: 20px;
+    text-decoration-color: black;
+    flex-flow: column;
+    transition-duration: 0.5s;
 }
-.Coincard:hover{
+
+.Coincard:hover {
     width: 12em;
     height: 12em;
-    
 }
 
-a{
+a {
     display: content!important;
     text-decoration-line: none;
 }
-.card-img{
-    display: flex;
-    justify-content:center;
-}
-.card-rank{
 
-    display: flex;
-   
-    justify-content:center;
-    color: black;   
+.card-img {
+    justify-content: center;
 }
-.card-name{
-    display: flex;
- 
-    justify-content:center;
+
+.card-rank {
+    justify-content: center;
+    color: black;
+}
+
+.card-name {
+    justify-content: center;
     text-decoration: none;
     color: black;
 }
 
-.card-symbol{
- 
-    justify-content:center;
-    text-transform: uppercase;
-}
-.card-price{
- 
-    justify-content:center;
+.card-symbol,
+.card-price {
     text-transform: uppercase;
 }

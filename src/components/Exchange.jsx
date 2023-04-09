@@ -27,9 +27,9 @@ const Exchange = () => {
     
         {exchanges.map((i)=>(
             <div className="Coincard" key={i.id}>
-              <a href={i.url} textdecoration="none">
+              <a  href={i.url}>
             
-            <span className="card-img">
+            <span className="card-img" >
                      <img src={i.image} alt="image" width="40" height="40" />
                 </span>
             <span className="card-rank">
@@ -42,7 +42,7 @@ const Exchange = () => {
               </a>
             </div>
      
-     
+    
      ))}
   
    <ClipLoader

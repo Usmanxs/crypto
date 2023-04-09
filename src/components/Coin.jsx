@@ -40,7 +40,7 @@ const Coin = () => {
                 </div>
             
             <div className="card-price">
-                <h4>{" price:"+i.current_price +''+"Rs"}</h4>
+                <h4>{"Rs"+":"+i.current_price }</h4>
                 </div>
             
            

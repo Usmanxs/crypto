@@ -16,7 +16,7 @@
     text-transform: uppercase;
     margin: 0px 25px 15px;
     min-width: 120px;
-    min-Height: 50px;
+    min-height: 50px;
     border:none;
     font-size: large;
     transition-duration: 0.5s;
@@ -71,11 +71,12 @@
    background-color:#fffafa;
    box-shadow: -4px 22px 13px -10px rgba(201,199,201,1);
    border-radius: 20px;
-   text-decoration: none;
    text-decoration-color: black;
    flex-flow: column;
-    transition-duration: 0.5s;
+   transition-duration: 0.5s;
 
+   
+   
 }
 .Coincard:hover{
     width: 12em;
@@ -83,15 +84,19 @@
     
 }
 
+a{
+    display: content!important;
+    text-decoration-line: none;
+}
 .card-img{
-     display: flex;
+    display: flex;
     justify-content:center;
 }
 .card-rank{
+
     display: flex;
    
     justify-content:center;
-    text-decoration: none;
     color: black;   
 }
 .card-name{

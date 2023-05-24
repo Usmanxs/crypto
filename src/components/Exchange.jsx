@@ -12,7 +12,8 @@ const Exchange = () => {
     const {data} =await axios.get(`${server}/exchanges`)
     setexchanges(data) 
     setloading(false    )
- 
+  let s= "sdfs"
+  s.tosr
 }
   fatchExchange();
      },[])

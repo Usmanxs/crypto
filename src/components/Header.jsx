@@ -8,10 +8,10 @@ const Header = () => {
     <Link to="./" style={{ textDecoration: 'none', color:'black' }}> Home</Link>
     </button> 
    <button>
-    <Link to="./Coin" style={{ textDecoration: 'none', color:'black' }}>Coin</Link>
+    <Link to="./Exchange" style={{ textDecoration: 'none', color:'black' }}>Exchange</Link>
     </button> 
    <button>
-    <Link to="./Exchange" style={{ textDecoration: 'none', color:'black' }}>Exchange</Link>
+    <Link to="./Coin" style={{ textDecoration: 'none', color:'black' }}>Price</Link>
     </button> 
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/home.css'
+
 const Home = () => {
   return (
     <div className="home">
@@ -12,10 +13,13 @@ const Home = () => {
        <div className="design">
       <img src="/Assets/logo.png" alt="logo" />
         <h1> DESIGN BY: 
-          </h1>
+          </h1><a href="usmanxs.com">
+
           <img src="/Assets/uxs.png" alt="logo"   height="50px"/>
+          </a>
        </div>
        </div>
+     
       </div>
 
   )

@@ -21,27 +21,26 @@ const Exchange = () => {
 
      return (
          <div  className="main">
-             <h1>Exhange</h1>
+             <h1>Exhanges</h1>
            <div className="container">
 
              <div className='card'>
-    
-        {exchanges.map((i)=>(
-            <div className="Coincard" key={i.id}>
-              <a  href={i.url}>
-            
-            <span className="card-img" >
-                     <img src={i.image} alt="image" width="40" height="40" />
-                </span>
-            <span className="card-rank">
-                <h3>{i.trust_score_rank}</h3>
-                </span>
-                
-            <span className="card-name">
-                <h4>{i.name}</h4>
-                </span>
-              </a>
-            </div>
+             {exchanges.map((i) => (
+        <div className="Coincard" key={i.id}>
+            <a href={i.url}>
+             <div className="card-img">
+         <img src={i.image} alt="image" width="40" height="40" padding="0.5rem" />
+             </div>
+         <div className="card-rank">
+             <h3>{i.trust_score_rank}</h3>
+      </div>
+      <div className="card-name">
+        <h4>{i.name}</h4>
+      </div>
+    </a>
+  </div>
+
+
      
     
      ))}

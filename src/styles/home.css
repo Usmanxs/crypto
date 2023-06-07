@@ -1,7 +1,8 @@
-.app:has(.home){
+body:has(.home){
     background-color: black;
-    width: 100vw;
-    height: 100vh;
+    background-size: cover;
+    margin:0;
+    padding: 0;
    
 }
 .home{

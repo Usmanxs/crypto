@@ -2,12 +2,21 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    height: 70px; /* Adjust the height as needed */
     background-color: rgb(0, 0, 0);
-}
+    z-index: 100; /* Ensure the header is positioned above other elements */
 
-.Header button {
+  }
+  
+  .app {
+    padding-top: 60px; /* Adjust this value to accommodate the height of the header */
+  }
+  .Header button {
     position: relative;
     top: 10px;
     border-radius: 50px;
@@ -19,18 +28,35 @@
     border: none;
     font-size: large;
     transition-duration: 0.5s;
-}
-
-.Header button:hover {
+  }
+  
+  .Header button:hover {
     transform: translateY(3px);
-}
-
-.main h1 {
+  }
+  
+  .main h1 {
     display: flex;
     color: #616161;
     align-items: center;
     justify-content: center;
-}
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .Header {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+    .Header button {
+      margin: 0 auto;
+      top :0;
+      width: 20px;
+      height: 10px;
+    }
+  }
+  
+
 
 .container {
     display: grid;
@@ -43,25 +69,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 10px;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .Coincard {
     display: flex;
-    margin: 15px auto;
-    flex-wrap: wrap;
-    padding: 5px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 10em;
     height: 10em;
-    align-content: flex-start;
+    margin: 1.5em;
     background-color: #fffafa;
-    box-shadow: -4px 22px 13px -10px rgba(201,199,201,1);
+    box-shadow: -4px 22px 13px -10px rgba(201, 199, 201, 1);
     border-radius: 20px;
     text-decoration-color: black;
-    flex-flow: column;
-    transition-duration: 0.5s;
+    transition-duration: 0.9s;
 }
 
 .Coincard:hover {
@@ -74,22 +98,35 @@ a {
     text-decoration-line: none;
 }
 
-.card-img {
-    justify-content: center;
-}
 
-.card-rank {
-    justify-content: center;
+
+  .Coincard .card-rank,
+  .Coincard .card-name {
+    text-align: center;
     color: black;
-}
-
-.card-name {
+  }
+  
+  .Coincard .card-img {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    color: black;
-}
-
+    margin-bottom: 0.5em;
+  }
 .card-symbol,
 .card-price {
     text-transform: uppercase;
+}
+.social-icons{
+  display: flex;
+  justify-content: space-evenly ;
+  
+}
+.icon{
+  width: 30px;
+  height:40px;
+transition-duration:0.5s;
+}
+.icon:hover{
+  width: 40px;
+  height:45px
 }

@@ -5,4 +5,4 @@ The page features easy-to-understand charts and graphs to help users monitor mar
 
 The Coin Exchange page is where users can exchange cryptocurrencies securely and efficiently. 
 The page features a simple and intuitive interface that allows users to buy and sell cryptocurrencies with ease. Users can select the currency they want to exchange and the amount they want to buy or sell, and the platform will automatically calculate the exchange rate and display the total amount of the transaction.
-[Demo](crypto.usmanxs.com/)
+[Demo](crypto.usmanxs.com)

@@ -54,7 +54,12 @@
       width: 20px;
       height: 10px;
     }
-  }
+    .container {
+      display: grid;
+      width: 50vw;
+      margin: 0 auto;
+      justify-content: center;
+  }}
   
 
 

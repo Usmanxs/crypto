@@ -26,10 +26,10 @@ const Exchange = () => {
 
              <div className='card'>
              {exchanges.map((i) => (
-        <div className="Coincard" key={i.id}>
+              <div className="Coincard" key={i.id}>
             <a href={i.url}>
              <div className="card-img">
-         <img src={i.image} alt="image" width="40" height="40" padding="0.5rem" />
+             <img src={i.image} alt="image" width="40" height="40" padding="0.5rem" />
              </div>
          <div className="card-rank">
              <h3>{i.trust_score_rank}</h3>

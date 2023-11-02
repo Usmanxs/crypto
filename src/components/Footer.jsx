@@ -7,7 +7,7 @@ const Footer = () => {
   
       <div className="social-icons" >
     
-        <a href="usmanxs.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://usmanxs.com" target="_blank" rel="noopener noreferrer">
        <FaGlobe className='icon'/>
          
         </a>
